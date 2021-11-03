@@ -2,7 +2,10 @@ import React from 'react'
 
 function ExpenseCard(props) {
 
-    
+
+    const deleteCard = (id) => {
+        props.deleteCard(id)
+    }
 
     return (
 
@@ -14,8 +17,8 @@ function ExpenseCard(props) {
                 <label className="py-1" htmlFor="Money">₹{props.values.amount}</label>
                 <br />
                 <label className="py-1" htmlFor="By">Paid by {props.values.name}</label>
-                <button type="button" className="btn btn-primary" >Primary</button>
             </div>
+            <button type="button" className="delete-card" onClick={() => { deleteCard(props.values.id) }}></button>
         </div>
 
     )

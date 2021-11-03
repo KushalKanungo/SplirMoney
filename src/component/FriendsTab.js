@@ -5,7 +5,7 @@ function FriendsTab() {
     return (
         <>
             <div className="container d-flex justify-content-center">
-                <div className="add-frnd-box white-card my-4">
+                <div className="add-frnd-box white-card my-3">
                     <div className="row ">
                         <input type="text" name="name" id="name" className="col-8 offset-2 col-sm-6 offset-sm-3 frnd-field" />
                        

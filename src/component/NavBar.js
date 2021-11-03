@@ -40,6 +40,7 @@ function NavBar() {
                 <div className="container">
                     <div className="row">
                         <div className="col-4 d-flex align-items-center justify-content-center">
+                        <i className="fa fa-home" aria-hidden="true"></i>
                             <Link to="/" className={`links  ${selected.home}`} onClick={homeClick} >HOME</Link>
                         </div>
                         <div className="col-4 d-flex align-items-center justify-content-center ">

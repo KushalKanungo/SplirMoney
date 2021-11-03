@@ -1,6 +1,8 @@
 body{
   background: rgb(22,175,249);
   background: radial-gradient(circle, rgba(22,175,249,1) 0%, rgba(45,253,251,1) 100%);
+
+  /* background-repeat: no-repeat; */
 }
 
 
@@ -19,7 +21,7 @@ nav{
   align-items: center;
   color: white;
   font-size: 15px;
-  font-family:monospace;
+  font-family: 'Montserrat', sans-serif;
   user-select: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 40px;
@@ -36,6 +38,7 @@ nav{
   text-align: center;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  font-size: 20px;
 }
 
 .links{
@@ -87,16 +90,16 @@ nav{
 }
 
 .expense-card{
-  /* width: 250px; */
   height: 150px;
-  /* width: 250px; */
   border-radius: 15px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding-left: 30px;
-  padding-top: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  overflow:hidden;
   
 }
 
@@ -112,7 +115,25 @@ nav{
   background: linear-gradient(90deg, rgba(148,218,252,0.44861694677871145) 0%, rgba(192,250,249,0.5018382352941176) 100%);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   outline: 0;
- border: none;
- box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  border: none;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.delete-card{
+  border-radius: 20px;
+  height: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+ background-color: aliceblue;
+ transition: ease-in 0.4s;
+
+}
+
+.delete-card:hover{
+  color: white; 
+  box-shadow: inset 200px 0 0 0 #f74352;
+
 }
 
